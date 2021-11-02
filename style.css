@@ -5,7 +5,6 @@
 }
 
 .clothing-articles{
-    background-color: brown;
     width: 80%;
     margin: 2% auto;
 }
@@ -24,9 +23,67 @@
 .center-item{
     margin: 0 1.5%;
 }
-.img-item{
-    background-color: cornflowerblue;
+.img-conteiner{
+    /* background-color: cornflowerblue; */
+    position: relative;
 }
-.img-item img{
-    width: 100%;    
+.img-conteiner img{
+    width: 100%;
+    position: relative;
+    z-index: 1;    
+}
+.stamps{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    height: 100%;
+    width: 100%;
+}
+.bottom-stamps{
+    position: absolute;
+    bottom: 5%;
+    left: 0%;
+}
+.discount, .eco{
+    display: inline-block;
+    margin-left: 2px;
+    padding: 5px;
+    color: white;   
+}
+.discount{
+    background-color: #eb0037;
+}
+.eco{
+    background-color: #00875a;
+}
+.favorites{
+    background-color: white;
+    position: absolute;
+    top: 5%;
+    right: 0%;
+    padding: 5px 15px;
+    font-size: 20px;
+}
+.favorites::before{
+    content: "\2665";
+}
+.text-item{
+    margin-top: 2%;
+}
+.brand{
+
+}
+.description{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.price, .old-price{
+    display: inline-block;
+}
+.price{
+    color: red;
+}
+.old-price{
+    text-decoration: line-through;
 }
