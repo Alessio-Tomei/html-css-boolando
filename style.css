@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clothing-articles{
+    background-color: brown;
+    width: 80%;
+    margin: 2% auto;
+}
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.row{
+    margin-bottom: 2%; 
+}
+.left-item, .center-item, .right-item{
+    float: left;
+    width: 32.333333%;
+}
+.center-item{
+    margin: 0 1.5%;
+}
+.img-item{
+    background-color: cornflowerblue;
+}
+.img-item img{
+    width: 100%;    
+}
